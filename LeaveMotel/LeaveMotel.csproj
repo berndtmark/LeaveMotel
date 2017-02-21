@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -11,10 +11,6 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-LeaveMotel-59c0a504-e156-43cc-986a-f4f42ec4d828</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="wwwroot\js\Angular\controllers\leavecontroller.ts" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
@@ -40,10 +36,6 @@
     <ProjectReference Include="..\LeaveMotel.BusinessLayer\LeaveMotel.BusinessLayer.csproj" />
     <ProjectReference Include="..\LeaveMotel.DataAccessLayer\LeaveMotel.DataAccessLayer.csproj" />
     <ProjectReference Include="..\LeaveMotel.Models\LeaveMotel.Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\js\Angular\models\" />
-    <Folder Include="wwwroot\js\Angular\services\" />
   </ItemGroup>
 
 </Project>
