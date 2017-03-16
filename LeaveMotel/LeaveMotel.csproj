@@ -37,5 +37,8 @@
     <ProjectReference Include="..\LeaveMotel.DataAccessLayer\LeaveMotel.DataAccessLayer.csproj" />
     <ProjectReference Include="..\LeaveMotel.Models\LeaveMotel.Models.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Leave\" />
+  </ItemGroup>
 
 </Project>

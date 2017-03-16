@@ -1,7 +1,1 @@
-namespace module {
-    'use strict';
-
-    angular.module('module', [
-
-    ]);
-}
+var app = angular.module('leaveMotel', []);

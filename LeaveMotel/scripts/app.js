@@ -1,6 +1,2 @@
-var module;
-(function (module) {
-    'use strict';
-    angular.module('module', []);
-})(module || (module = {}));
+var app = angular.module('leaveMotel', []);
 //# sourceMappingURL=app.js.map

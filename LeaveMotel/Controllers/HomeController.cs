@@ -10,17 +10,8 @@ namespace LeaveMotel.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILeaveService _leaveService;
-
-        public HomeController(ILeaveService leaveService)
-        {
-            _leaveService = leaveService;
-        }
-
         public IActionResult Index()
         {
-            var x = _leaveService.GetLeaveCalandar(2015, Models.Enums.MonthName.January);
-
             return View();
         }
 
