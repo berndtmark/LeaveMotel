@@ -3,8 +3,8 @@
     export class LeaveController {
         testData: string;
 
-        //static $inject = ["$scope", "$http"];
-        constructor() {
+        static $inject = ["leaveService"];
+        constructor(public leaveService: ILeaveService) {
             this.testData = 'success';
         }
     }

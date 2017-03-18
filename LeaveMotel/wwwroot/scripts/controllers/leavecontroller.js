@@ -1,13 +1,14 @@
 var LeaveMotel;
 (function (LeaveMotel) {
     var LeaveController = (function () {
-        //static $inject = ["$scope", "$http"];
-        function LeaveController() {
+        function LeaveController(leaveService) {
+            this.leaveService = leaveService;
             this.testData = 'success';
         }
         return LeaveController;
     }());
+    LeaveController.$inject = ["leaveService"];
     LeaveMotel.LeaveController = LeaveController;
     app.controller("leaveController", LeaveMotel.LeaveController);
 })(LeaveMotel || (LeaveMotel = {}));
-//# sourceMappingURL=leavecontroller.js.map
+//# sourceMappingURL=leaveController.js.map
