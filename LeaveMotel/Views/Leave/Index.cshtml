@@ -5,15 +5,17 @@
 
 @section Scripts
 {
-    <script src="~/scripts/app.js"></script>
-    <script src="~/scripts/models/leaveCalandar.js"></script>
-    <script src="~/scripts/services/leaveService.js"></script>
-    <script src="~/scripts/controllers/leaveController.js"></script>
+    <environment names="Development">
+        <script src="~/js/leave.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/leave.min.js" asp-append-version="true"></script>
+    </environment>
+
 }
 
 <div ng-app="leaveMotel">
     <div ng-controller="leaveController as l">
-        <p>{{ l.testData }}</p>
+        <day-widget name="l.testData"></day-widget>
     </div>
 </div>
-

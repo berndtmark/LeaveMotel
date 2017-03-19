@@ -12,5 +12,10 @@ namespace LeaveMotel.Controllers
         {
             return View();
         }
+
+        public IActionResult DayWidget()
+        {
+            return PartialView("~/Views/Leave/Partials/DayWidget.cshtml");
+        }
     }
 }

@@ -4,10 +4,10 @@ module LeaveMotel {
     }
 
     app.component('dayWidget', {
-        templateUrl: 'temp.html',
+        templateUrl: '/Leave/DayWidget',
         controller: DayWidgetController,
         bindings: {
-            hero: '='
+            name: '='
         }
     });
 }
